@@ -1,0 +1,156 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+  font-size: 62.5%;
+
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+  margin: 0;
+
+}
+
+/******************************************
+/* Layout
+/*******************************************/
+
+.container{
+
+  width: 100%;
+  margin: 80px auto;
+  text-align: center;
+
+}
+
+/******************************************
+/* Header
+/*******************************************/
+
+header {
+  width: 100%;
+  height: 150px;
+  background-color: lightpink;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.title{
+
+  height: 30%;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  font-style: italic;
+  color: hotpink;
+
+}
+
+/******************************************
+/* Main
+/*******************************************/
+
+main {
+
+  width: 50%;
+  height: 500px;
+  margin: 20px auto 30px auto;
+  border: solid pink 10px;
+  background-color: lightpink;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+main section {
+
+
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+}
+
+/******************************************
+/* Section Headings
+/*******************************************/
+
+.heading {
+
+  width: 50%;
+  height: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  color: green;
+  border: 10px solid lightpink;
+  border-radius: 10px;
+  text-align: left;
+  display: inline;
+
+}
+
+.heading-alt {
+
+  height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: darkgreen;
+  border: none;
+
+}
+
+/******************************************
+/* Typography
+/*******************************************/
+
+h1 {
+  
+  font-size: 4rem;
+
+}
+
+h2 {
+
+  font-size: 3rem;
+
+}
+
+a, p {
+
+  font-size: 3rem;
+  
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.tip {
+
+  font-weight: 700;
+  font-style: italic;
+  color: white;
+
+}
