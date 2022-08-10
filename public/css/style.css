@@ -242,4 +242,8 @@ h2,
     font-size: 2.5rem;
   }
 
+  .inner-container {
+    width: 90%;
+  }
+
 }
