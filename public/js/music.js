@@ -24,7 +24,6 @@ fetch(url)
   .then(data => {
 
     songData = data;
-    console.log(data);
 
   })
   .catch(err => {
