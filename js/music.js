@@ -5,18 +5,13 @@ const url = 'http://acnhapi.com/v1/songs';
 // defines the section in which audio elements will be dynamically added to
 const musicSection = document.querySelector('#music-section');
 
-// defines the list of buttons that will be used to display songs based on their starting letter
-const categoryButtons = document.getElementsByClassName('letter-btn');
+// defines the parent element that will be listening for any letter button pushes
+const letterList = document.getElementById('letter-list');
+
+letterList.addEventListener('click', getSongs);
 
 // will be used to store the song object returned from a fetch
 let songData;
-
-// adds event listener to all buttons
-for(let i = 0; i < categoryButtons.length; i++) {
-
-  categoryButtons[i].addEventListener('click', getSongs);
-
-}
 
 // fetch for getting song information from api used
 fetch(url)
@@ -33,7 +28,7 @@ fetch(url)
     
   })
   
-// populate the song section of the webpage with song name and audio pairs
+// populate the song section of the webpage with song name and audio pairs when a letter button is clicked
 function getSongs(e) {
 
   // holds the references to each object within the data that is returned from fetch
@@ -45,7 +40,7 @@ function getSongs(e) {
   // populates songs array with song objects
   for(let i = 0; i < songProperties.length; i++) {
 
-    songs.push(songData[songProperties[i]])
+    songs.push(songData[songProperties[i]]);
 
   }
 
@@ -69,7 +64,7 @@ function getSongs(e) {
 
       audioImage.src = filteredSongs[i].image_uri;
 
-      audioName.className = 'heading-alt'
+      audioName.className = 'heading-alt';
       audioName.innerText = filteredSongs[i]['file-name'].slice(4);
 
       newAudio.src = filteredSongs[i].music_uri;
@@ -87,9 +82,10 @@ function getSongs(e) {
     musicSection.innerHTML = '';
     let notFoundMessage = document.createElement('p');
     notFoundMessage.innerText = `No songs were found from that category.`;
-    notFoundMessage.className = 'tip'
+    notFoundMessage.className = 'tip';
     musicSection.append(notFoundMessage);
 
   }
 
 }
+
