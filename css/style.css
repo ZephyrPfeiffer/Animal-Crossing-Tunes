@@ -4,9 +4,7 @@
 }
 
 html {
-
   font-size: 62.5%;
-
 }
 
 /* Clear fix hack */
@@ -38,19 +36,14 @@ body {
 /*******************************************/
 
 .heading-container{
-
   text-align: center;
-  margin-bottom: 5rem;
-
 }
 
 .inner-container {
-
   width: 50%;
   margin: 5rem auto;
   background: #f1f3f4;
   border-radius: 10px;
-
 }
 
 img {
@@ -63,19 +56,32 @@ audio {
 }
 
 .categories {
-
   width: 95%;
   margin: auto;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   height: 150px;
   background: lightpink;
   border: 10px solid pink;
   border-radius: 10px;
+}
 
+.category-dropdown {
+  height: 70px;
+  display: none;
+}
+
+.dropdown {
+  text-align: center;
+}
+
+.category-form,
+.category-form select {
+  height: 100%;
+  width: 100%;
 }
 
 .category-list{
-
   width: 100%;
   height: 100%;
   margin: 0;
@@ -83,16 +89,13 @@ audio {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 .category-list li{
-
   width: 3.5%;
   height: 40%;
   list-style: none;
   display: inline-block;
-
 }
 
 .music-container {
@@ -102,7 +105,6 @@ audio {
   background-color: lightpink;
   border-radius: 10px;
   text-align: center;
-
 }
 
 /******************************************
@@ -117,14 +119,13 @@ header {
 }
 
 .title{
-
-  width: 50%;
+  width: 100%;
   height: 40%;
+  text-align: left;
   padding: 10px;
   margin: auto;
   font-style: italic;
   color: hotpink;
-
 }
 
 /******************************************
@@ -132,24 +133,20 @@ header {
 /*******************************************/
 
 .heading {
-
   display: inline;
   padding: 10px;
   border: 10px solid lightpink;
   border-radius: 10px;
   color: green;
-
 }
 
 .heading-alt {
-
   font-size: 4rem;
   font-weight: 500;
   color: darkgreen;
   border: none;
   margin: 0;
   font-family: 'Roboto', 'sans-serif';
-
 }
 
 /******************************************
@@ -157,38 +154,33 @@ header {
 /*******************************************/
 
 h1 {
-  
   font-size: 4rem;
-
 }
 
 
-a, p, h2{
-
+a, 
+p, 
+h2,
+.dropdown {
   font-size: 3rem;
-  
+  font-family: 'Roboto', 'sans-serif';
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* Media Queries
 /*******************************************/
 
 .tip {
-
   font-weight: 700;
-  font-style: italic;
   color: white;
-
 }
 
 
 .letter-btn {
-
   color: green;
   background: lightgreen;
   width: 100%;
   height: 100%;
-
 }
 
 .letter-btn:hover {
@@ -197,4 +189,53 @@ a, p, h2{
 
 .letter-btn:active {
   background-color: white;
+}
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
+@media (max-width: 1500px) {
+
+  .category-list {
+    flex-wrap: wrap;
+  }
+
+  .category-list li {
+    width: 7.5%;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .music-container,
+  .inner-container {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .music-container {
+    width: 95%;
+  }
+
+  .category-dropdown {
+    display: block;
+  }
+
+  .category-menu {
+    display: none;
+  }
+
+}
+
+@media (max-width: 544px) {
+
+  .title {
+    text-align: center;
+  }
+
 }

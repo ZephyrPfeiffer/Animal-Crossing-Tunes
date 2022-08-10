@@ -1,4 +1,5 @@
 <!--figure out samesite cookies and create media quries to implement tablet and mobile layouts-->
+<!--implement media queries-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +20,7 @@
 	</head>
 	<body>
 
-    <!--Heading Section-->
+    <!--Header-->
     <header>
       <h1 class="title">Animal Crossing New Horizons</h1>
     </header>
@@ -29,40 +30,74 @@
       <h2 class="heading">Sort Songs</h2>
     </section>
 
+    <section class="categories category-dropdown">
+      <form class="category-form">
+        <select class="dropdown" name="category-choices" id="letter-dropdown">
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option value="c">C</option>
+          <option value="d">D</option>
+          <option value="e">E</option>
+          <option value="f">F</option>
+          <option value="g">G</option>
+          <option value="h">H</option>
+          <option value="i">I</option>
+          <option value="j">J</option>
+          <option value="k">K</option>
+          <option value="l">L</option>
+          <option value="m">M</option>
+          <option value="n">N</option>
+          <option value="o">O</option>
+          <option value="p">P</option>
+          <option value="Q">Q</option>
+          <option value="r">R</option>
+          <option value="s">S</option>
+          <option value="t">T</option>
+          <option value="u">U</option>
+          <option value="v">V</option>
+          <option value="w">W</option>
+          <option value="x">X</option>
+          <option value="y">Y</option>
+          <option value="z">Z</option>
+        </select>
+      </form>
+    </section>
+
     <!--Category Section-->
-    <section class="container categories">
+    <section class="categories category-menu">
       <ol id="letter-list" class="category-list">
-        <li><button class="letter-btn" type="button" name="letter">A</button></li>
-        <li><button class="letter-btn" type="button" name="letter">B</button></li>
-        <li><button class="letter-btn" type="button" name="letter">C</button></li>
-        <li><button class="letter-btn" type="button" name="letter">D</button></li>
-        <li><button class="letter-btn" type="button" name="letter">E</button></li>
-        <li><button class="letter-btn" type="button" name="letter">F</button></li>
-        <li><button class="letter-btn" type="button" name="letter">G</button></li>
-        <li><button class="letter-btn" type="button" name="letter">H</button></li>
-        <li><button class="letter-btn" type="button" name="letter">I</button></li>
-        <li><button class="letter-btn" type="button" name="letter">J</button></li>
-        <li><button class="letter-btn" type="button" name="letter">K</button></li>
-        <li><button class="letter-btn" type="button" name="letter">L</button></li>
-        <li><button class="letter-btn" type="button" name="letter">M</button></li>
-        <li><button class="letter-btn" type="button" name="letter">N</button></li>
-        <li><button class="letter-btn" type="button" name="letter">O</button></li>
-        <li><button class="letter-btn" type="button" name="letter">P</button></li>
-        <li><button class="letter-btn" type="button" name="letter">Q</button></li>
-        <li><button class="letter-btn" type="button" name="letter">R</button></li>
-        <li><button class="letter-btn" type="button" name="letter">S</button></li>
-        <li><button class="letter-btn" type="button" name="letter">T</button></li>
-        <li><button class="letter-btn" type="button" name="letter">U</button></li>
-        <li><button class="letter-btn" type="button" name="letter">V</button></li>
-        <li><button class="letter-btn" type="button" name="letter">W</button></li>
-        <li><button class="letter-btn" type="button" name="letter">X</button></li>
-        <li><button class="letter-btn" type="button" name="letter">Y</button></li>
-        <li><button class="letter-btn" type="button" name="letter">Z</button></li>
+        <li><button class="letter-btn" type="button" value="a" name="letter">A</button></li>
+        <li><button class="letter-btn" type="button" value="b" name="letter">B</button></li>
+        <li><button class="letter-btn" type="button" value="c" name="letter">C</button></li>
+        <li><button class="letter-btn" type="button" value="d" name="letter">D</button></li>
+        <li><button class="letter-btn" type="button" value="e" name="letter">E</button></li>
+        <li><button class="letter-btn" type="button" value="f" name="letter">F</button></li>
+        <li><button class="letter-btn" type="button" value="g" name="letter">G</button></li>
+        <li><button class="letter-btn" type="button" value="h" name="letter">H</button></li>
+        <li><button class="letter-btn" type="button" value="i" name="letter">I</button></li>
+        <li><button class="letter-btn" type="button" value="j" name="letter">J</button></li>
+        <li><button class="letter-btn" type="button" value="k" name="letter">K</button></li>
+        <li><button class="letter-btn" type="button" value="l" name="letter">L</button></li>
+        <li><button class="letter-btn" type="button" value="m" name="letter">M</button></li>
+        <li><button class="letter-btn" type="button" value="n" name="letter">N</button></li>
+        <li><button class="letter-btn" type="button" value="o" name="letter">O</button></li>
+        <li><button class="letter-btn" type="button" value="p" name="letter">P</button></li>
+        <li><button class="letter-btn" type="button" value="q" name="letter">Q</button></li>
+        <li><button class="letter-btn" type="button" value="r" name="letter">R</button></li>
+        <li><button class="letter-btn" type="button" value="s" name="letter">S</button></li>
+        <li><button class="letter-btn" type="button" value="t" name="letter">T</button></li>
+        <li><button class="letter-btn" type="button" value="u" name="letter">U</button></li>
+        <li><button class="letter-btn" type="button" value="v" name="letter">V</button></li>
+        <li><button class="letter-btn" type="button" value="w" name="letter">W</button></li>
+        <li><button class="letter-btn" type="button" value="x" name="letter">X</button></li>
+        <li><button class="letter-btn" type="button" value="y" name="letter">Y</button></li>
+        <li><button class="letter-btn" type="button" value="z" name="letter">Z</button></li>
       </ol>
     </section>
 
+    <!--Song Section-->
     <section id="music-section" class="music-container">
-        <p class="tip">Click from the list of buttons above to sort and display songs alphabetically.</p>
+        <p class="tip">Click from the list choices above to sort and display songs alphabetically.</p>
     </section>
 
 		<script type="text/javascript" src="js/music.js"></script>
