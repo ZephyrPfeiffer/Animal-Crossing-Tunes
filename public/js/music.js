@@ -52,14 +52,14 @@ function getSongs(e) {
   filteredSongs = songs.filter(song => (song['file-name'][4].toLowerCase() === e.target.value.toLowerCase()));
 
   if(filteredSongs.length > 0) {
-    // clears all elements within music section before populating with song name and audio pairs
+    // clears all elements within music section before populating with song name and audio groups
     musicSection.innerHTML = '';
 
     // creates a song name, image, and audio element group for each song object in the filtered songs array
     // then places the group of elements in the music seciton
     for(let i = 0; i < filteredSongs.length; i++) {
 
-      // initialize element names
+      // initialize elements current song
       let audioSection = document.createElement('section');
       let audioImage = document.createElement('img');
       let audioName = document.createElement('h3');
@@ -89,7 +89,8 @@ function getSongs(e) {
     }
   }else{
 
-    // if there are no songs in the filteredSongs array, provide a message that tells the user that there are no songs in the specified category
+    // if there are no songs in the filteredSongs array, 
+    //provide a message that tells the user that there are no songs in the specified category
     musicSection.innerHTML = '';
     let notFoundMessage = document.createElement('p');
     notFoundMessage.innerText = `No songs were found from that category.`;
