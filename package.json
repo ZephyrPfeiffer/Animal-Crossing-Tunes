@@ -1,0 +1,23 @@
+{
+  "name": "animalcrossingtunes",
+  "version": "1.0.0",
+  "description": "Animal Crossing Tune Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZephyrPfeiffer/animalcrossinginquirer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZephyrPfeiffer/animalcrossinginquirer/issues"
+  },
+  "homepage": "https://github.com/ZephyrPfeiffer/animalcrossinginquirer#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
