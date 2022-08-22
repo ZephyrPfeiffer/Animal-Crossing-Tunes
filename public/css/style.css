@@ -5,6 +5,7 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 /* Clear fix hack */
@@ -27,7 +28,8 @@ html {
 
 body {
 
-  margin: 0;
+  position: relative;
+  height: 100%;
 
 }
 
@@ -41,7 +43,7 @@ body {
 
 .inner-container {
   width: 50%;
-  margin: 5rem auto;
+  margin: 7rem auto;
   background: #f1f3f4;
   border-radius: 10px;
 }
@@ -99,8 +101,8 @@ audio {
 }
 
 .music-container {
-  width: 50%;
-  margin: 20px auto 30px auto;
+  width: 60%;
+  margin: 1rem auto 3rem auto;
   border: solid pink 10px;
   background-color: lightpink;
   border-radius: 10px;
@@ -150,6 +152,23 @@ header {
 }
 
 /******************************************
+/* Footer
+/*******************************************/
+
+footer {
+  width: 100%;
+  background-color: lightpink;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer h3 {
+  display: inline-block;
+}
+
+/******************************************
 /* Typography
 /*******************************************/
 
@@ -158,7 +177,7 @@ h1 {
 }
 
 
-a, 
+li, 
 p, 
 h2,
 .dropdown {
@@ -166,9 +185,27 @@ h2,
   font-family: 'Roboto', 'sans-serif';
 }
 
-/******************************************
-/* Media Queries
-/*******************************************/
+h3 {
+  padding-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
+
+a,
+h3 {
+  font-size: 1.5rem;
+  font-family: 'Roboto', 'sans-serif';
+}
 
 .tip {
   font-weight: 700;

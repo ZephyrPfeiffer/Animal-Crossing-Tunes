@@ -23,6 +23,7 @@ fetch(url)
   .then(res => res.json())
   .then(data => {
 
+    // store song data so that we don't need to keep making fetches each time we click a button
     songData = data;
 
   })
@@ -39,7 +40,6 @@ function getSongs(e) {
   let songProperties = Object.keys(songData);
 
   let songs = [];
-  let filteredSongs = [];
 
   // populates songs array with song objects
   for(let i = 0; i < songProperties.length; i++) {
@@ -49,7 +49,7 @@ function getSongs(e) {
   }
 
   // populates filteredSongs array with song objects whose name starts with the value in the button that was pressed
-  filteredSongs = songs.filter(song => (song['file-name'][4].toLowerCase() === e.target.value.toLowerCase()));
+  let filteredSongs = songs.filter(song => (song['file-name'][4].toLowerCase() === e.target.value.toLowerCase()));
 
   if(filteredSongs.length > 0) {
     // clears all elements within music section before populating with song name and audio groups
@@ -80,7 +80,7 @@ function getSongs(e) {
       newAudio.src = filteredSongs[i].music_uri;
       newAudio.controls = true;
 
-      // places all created elements in the dom
+      // attach all created elements to song section in dom
       musicSection.appendChild(audioSection);
       audioSection.appendChild(audioName);
       audioSection.appendChild(audioImage);
