@@ -19,3 +19,9 @@
 <hr>
 
 <p>While building the logic for retrieving songs from the API, I came across a performance issue. When working with the API, I noticed that it took a long time to retrieve information from it each time I made a request. To solve this problem, I decidied to store all song information within the webpage so that I only needed to make a single request. By having all the song information already, I only needed to sort through the songs and populate the webpage with all songs requested from the user.</p>
+
+<h2>Lessons Learned</h2>
+
+<hr>
+
+<p>While building this application, I learned about the importance of writing down key project information. Key information such as project issues or goals helped me keep track of what was going on in the project and what I needed to do next. I also learned about the importance of refactoring code. After building the logic for this application, I gained insight on what could be done better and made changes to improve it. The webpage recieved a huge boost in performance due to the refactoring process.</p>
