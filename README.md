@@ -13,3 +13,9 @@
 <h3>Tech Used: HTML, CSS, Javascript, API.</h3>
 
 <p>Before building this web application, I worked with the Animal Crossing API to figure out how the API worked and what kind of information I could retrieve from it. Once I learned the structure of the API, I built a program that would extract song information from the API and populate the webpage with songs that users could listen to. Once the logic was up and running, I constructed a user interface on the webpage that would allow users to retrieve and sort songs from the Animal Crossing API. Once the interface was set up, I cleaned up the layout of the webpage to make the webpage more appealing and easier to navigate.</p>
+
+<h2>Optimizations</h2>
+
+<hr>
+
+<p>While building the logic for retrieving songs from the API, I came across a performance issue. When working with the API, I noticed that it took a long time to retrieve information from it each time I made a request. To solve this problem, I decidied to store all song information within the webpage so that I only needed to make a single request. By having all the song information already, I only needed to sort through the songs and populate the webpage with all songs requested from the user.</p>
