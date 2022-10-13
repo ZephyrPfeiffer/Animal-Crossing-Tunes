@@ -1,4 +1,4 @@
-﻿# animalcrossingtunes
+﻿# Animal Crossing Tunes
  
 <h1>Listen to your favorite songs from the famous game Animal Crossing New Horizons.</h2>
 
