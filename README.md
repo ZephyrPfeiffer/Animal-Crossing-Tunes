@@ -2,7 +2,7 @@
  
 <h1>Listen to your favorite songs from the famous game Animal Crossing New Horizons.</h2>
 
-<span>Link to project: https://animal-crossing-tunes.onrender.com/</span>
+<span>Link to project: https://animalcrossingmusic.cyclic.app/</span>
 
 <h3 align="left">Animal Crossing Tunes Demo</h3>
 
