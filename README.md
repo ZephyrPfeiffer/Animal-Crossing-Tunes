@@ -4,7 +4,9 @@
 
 <span>Link to project: https://animal-crossing-tunes.onrender.com/</span>
 
-![](img/animalcrossingshowcase.png)
+<h3 align="left">Animal Crossing Tunes Demo</h3>
+
+![Animal Crossing Demo](/animalcrossingtunesdemo.gif)
 
 <h2>How It's Made:</h2>
 
